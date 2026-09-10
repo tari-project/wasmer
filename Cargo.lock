@@ -5709,6 +5709,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "876fef147edbcbddc8ac5cbbba92c7b86519e314e86638596c09673b2ed01e7f"
 
 [[package]]
+name = "tari-wasmer-middlewares"
+version = "7.5.0"
+dependencies = [
+ "wasmer",
+ "wasmer-types",
+ "wasmer-vm",
+]
+
+[[package]]
 name = "tempfile"
 version = "3.27.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7330,13 +7339,13 @@ version = "0.0.0"
 dependencies = [
  "anyhow",
  "libfuzzer-sys",
+ "tari-wasmer-middlewares",
  "wasm-smith",
  "wasmer",
  "wasmer-compiler",
  "wasmer-compiler-cranelift",
  "wasmer-compiler-llvm",
  "wasmer-compiler-singlepass",
- "wasmer-middlewares",
  "wasmprinter",
 ]
 
@@ -7351,6 +7360,7 @@ dependencies = [
  "inline-c",
  "libc",
  "paste",
+ "tari-wasmer-middlewares",
  "thiserror 2.0.21",
  "tokio",
  "tracing",
@@ -7362,7 +7372,6 @@ dependencies = [
  "wasmer-compiler-cranelift",
  "wasmer-compiler-llvm",
  "wasmer-compiler-singlepass",
- "wasmer-middlewares",
  "wasmer-types",
  "wasmer-wasix",
  "wat",
@@ -7721,15 +7730,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "wasmer-middlewares"
-version = "7.5.0"
-dependencies = [
- "wasmer",
- "wasmer-types",
- "wasmer-vm",
-]
-
-[[package]]
 name = "wasmer-napi"
 version = "0.705.0"
 dependencies = [
@@ -8049,6 +8049,7 @@ dependencies = [
  "reqwest",
  "rustc_version 0.4.1",
  "serial_test",
+ "tari-wasmer-middlewares",
  "tempfile",
  "test-generator",
  "test-log",
@@ -8062,7 +8063,6 @@ dependencies = [
  "wasmer-compiler-cranelift",
  "wasmer-compiler-llvm",
  "wasmer-compiler-singlepass",
- "wasmer-middlewares",
  "wasmer-types",
  "wasmer-wasix",
  "wasmer-wast",
