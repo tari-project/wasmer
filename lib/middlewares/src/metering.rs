@@ -66,7 +66,7 @@ impl fmt::Debug for MeteringGlobalIndexes {
 /// ```rust
 /// use std::sync::Arc;
 /// use wasmer::{wasmparser::Operator, sys::CompilerConfig};
-/// use wasmer_middlewares::Metering;
+/// use tari_wasmer_middlewares::Metering;
 ///
 /// fn create_metering_middleware(compiler_config: &mut dyn CompilerConfig) {
 ///     // Let's define a dummy cost function,
@@ -336,7 +336,7 @@ impl<'a, F: Fn(&Operator) -> u64 + Send + Sync> FunctionMiddleware<'a> for Funct
 /// ```rust
 /// use wasmer::Instance;
 /// use wasmer::AsStoreMut;
-/// use wasmer_middlewares::metering::{get_remaining_points, MeteringPoints};
+/// use tari_wasmer_middlewares::metering::{get_remaining_points, MeteringPoints};
 ///
 /// /// Check whether the instance can continue to run based on the
 /// /// number of remaining points.
@@ -383,7 +383,7 @@ pub fn get_remaining_points(ctx: &mut impl AsStoreMut, instance: &Instance) -> M
 ///
 /// ```rust
 /// use wasmer::{AsStoreMut, Instance};
-/// use wasmer_middlewares::metering::set_remaining_points;
+/// use tari_wasmer_middlewares::metering::set_remaining_points;
 ///
 /// fn update_remaining_points(store: &mut impl AsStoreMut, instance: &Instance) {
 ///     // The new limit.

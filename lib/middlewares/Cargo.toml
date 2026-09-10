@@ -1,6 +1,6 @@
 [package]
-name = "wasmer-middlewares"
-description = "A collection of various useful middlewares"
+name = "tari-wasmer-middlewares"
+description = "Tari fork of wasmer-middlewares: metering with exposed global indexes for the Tari Ootle engine"
 categories = ["wasm"]
 keywords = ["webassembly", "wasm"]
 readme = "README.md"
@@ -8,9 +8,9 @@ authors.workspace = true
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
-repository.workspace = true
+repository = "https://github.com/tari-project/wasmer"
 rust-version.workspace = true
-version.workspace = true
+version = "7.4.0"
 
 [dependencies]
 wasmer = { path = "../api", version = "=7.4.0", default-features = false, features = [

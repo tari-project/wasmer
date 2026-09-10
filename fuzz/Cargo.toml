@@ -17,7 +17,7 @@ wasmer-compiler-cranelift = { path = "../lib/compiler-cranelift", optional = tru
 wasmer-compiler-llvm = { path = "../lib/compiler-llvm", optional = true }
 wasmer-compiler-singlepass = { path = "../lib/compiler-singlepass", optional = true }
 wasmer-compiler = { path = "../lib/compiler" }
-wasmer-middlewares = { path = "../lib/middlewares" }
+wasmer-middlewares = { package = "tari-wasmer-middlewares", path = "../lib/middlewares" }
 wasmprinter.workspace = true
 
 [features]

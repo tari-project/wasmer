@@ -31,7 +31,7 @@ wasmer-compiler = { version = "=7.4.0", path = "../compiler", optional = true }
 wasmer-compiler-cranelift = { version = "=7.4.0", path = "../compiler-cranelift", optional = true }
 wasmer-compiler-llvm = { version = "=7.4.0", path = "../compiler-llvm", optional = true }
 wasmer-compiler-singlepass = { version = "=7.4.0", path = "../compiler-singlepass", optional = true }
-wasmer-middlewares = { version = "=7.4.0", path = "../middlewares", optional = true }
+wasmer-middlewares = { package = "tari-wasmer-middlewares", version = "=7.4.0", path = "../middlewares", optional = true }
 wasmer-types = { version = "=7.4.0", path = "../types" }
 wasmer-wasix = { path = "../wasix", version = "=0.704.0", features = [
   "host-fs",

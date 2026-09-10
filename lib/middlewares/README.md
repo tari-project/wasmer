@@ -1,6 +1,6 @@
 # Wasmer Middlewares
 
-The `wasmer-middlewares` crate is a collection of various useful
+The `tari-wasmer-middlewares` crate (Tari fork of `wasmer-middlewares`) is a collection of various useful
 middlewares:
 
 - `metering`: A middleware for tracking how many operators are
